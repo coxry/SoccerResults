@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('soccer-matches');
+  this.route('matches');
 });
 
 export default Router;
