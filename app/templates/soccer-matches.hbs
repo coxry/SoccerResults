@@ -1,0 +1,15 @@
+<div id="container">
+<h2>Soccer matches</h2>
+<table class="table table-bordered">
+  <tr><th>Location</th><th>Home Team</th><th>Away Team</th><th>Winner</th><th>Match Time</th></tr>
+  {{#each}}
+  <tr {{bind-attr class=result_code}}>
+  <td>{{location}}</td>
+  <td>{{home_team.country}}</td>
+  <td>{{away_team.country}}</td>
+  <td>{{winner}}</td>
+  <td>{{match_time}}</td>
+  </tr>
+  {{/each}}
+</table>
+</div>

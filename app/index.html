@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WorldCup</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/world-cup.css">
+  </head>
+  <body>
+    <script>
+      window.WorldCupENV = {{ENV}};
+      window.EmberENV = window.WorldCupENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/world-cup.js"></script>
+    <script>
+      window.WorldCup = require('world-cup/app')['default'].create(WorldCupENV.APP);
+    </script>
+  </body>
+</html>
