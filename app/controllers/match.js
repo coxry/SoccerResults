@@ -10,7 +10,7 @@ export default Ember.ObjectController.extend({
   }.property('model.winner', 'model.home_team.country'),
 
   match_time: function() {
-    return moment(this.get('model.datetime'), "YYYY-MM-DD").fromNow();
+    return moment(this.get('model.datetime')).tz('America/New_York').fromNow();
   }.property('model.datetime')
 });
 
