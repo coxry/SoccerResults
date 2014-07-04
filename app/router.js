@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('matches');
+  this.route('current-matches');
+  this.route('todays-matches');
 });
 
 export default Router;

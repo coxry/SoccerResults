@@ -1,5 +1,14 @@
-{{#if loading}}
-  LOADING
-{{/if}}
+<div class="container">
+
+<div class="pull-right">
+
+{{#link-to 'current-matches'}}Current{{/link-to}}
+{{#link-to 'todays-matches'}}Today{{/link-to}}
+{{#link-to 'matches'}}All{{/link-to}}
+
+</div>
+
 
 {{outlet}}
+
+</div>
